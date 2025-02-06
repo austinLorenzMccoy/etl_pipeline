@@ -17,13 +17,14 @@ A PostgreSQL database is used to store the extracted and transformed data. Postg
 ### **Open Meteo API (Solar Radiation Data):**
 The external API used in this project is the Open Meteo API, which provides data about solar radiation and clear sky radiation. This data includes metadata such as latitude, longitude, solar radiation, and time. The solar radiation data used in this project is sourced specifically from Lagos, Nigeria.
 
+```
 host= "https://ensemble-api.open-meteo.com"
 extra=
 {
   "base_path": "/v1/ensemble",
   "query_string": "latitude=6.4541&longitude=3.3947&hourly=shortwave_radiation,direct_radiation,diffuse_radiation,direct_normal_irradiance,global_tilted_irradiance&timezone=auto"
 }
-
+```
 
 ---
 
